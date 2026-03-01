@@ -628,6 +628,41 @@
             bindings = <&kp LANGUAGE_2 &kp BACKSLASH>;
             label = "BACKSLASH";
         };
+
+        vim_save: vim_save {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp COLON &kp W &kp Q>;
+            label = "VIM_SAVE";
+        };
+
+        vim_quite: vim_quite {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp COLON &kp Q>;
+            label = "VIM_QUITE";
+        };
+
+        zoom: zoom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp PLUS>;
+            label = "ZOOM";
+        };
+
+        zoom_out: zoom_out {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp MINUS>;
+            label = "ZOOM_OUT";
+        };
+
+        zoom_zero: zoom_zero {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp NUMBER_0>;
+            label = "ZOOM_ZERO";
+        };
     };
 
     keymap {
@@ -664,10 +699,10 @@
 
         layer_3 {
             bindings = <
-&none  &zero          &three  &two    &one                                        &backquate  &syapu                &ue                    &equal  &pipe
-&none  &kp LC(COLON)  &six    &five   &four   &childa               &doublequate  &astarisk   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &plus   &coron
-&none  &kp DOT        &nine   &eight  &seven  &slash_backslash      &kp LBKT      &kp RBKT    &dainari              &syounari              &slash  &underbar
-&none  &none          &none   &none   &none   &none                 &none         &none                                                            &to 0
+&none             &zero          &three  &two    &one                                        &backquate  &syapu                &ue                    &equal  &pipe
+&none             &kp LC(COLON)  &six    &five   &four   &childa               &doublequate  &astarisk   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &plus   &coron
+&none             &kp DOT        &nine   &eight  &seven  &slash_backslash      &kp LBKT      &kp RBKT    &dainari              &syounari              &slash  &underbar
+&kp LEFT_CONTROL  &kp LALT       &none   &none   &none   &none                 &none         &none                                                            &to 0
             >;
         };
 
@@ -684,10 +719,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans      &trans      &trans  &trans                      &trans  &trans     &kp UP         &trans     &trans
-&trans  &trans      &trans      &trans  &trans  &trans      &trans  &trans  &kp LEFT   &kp DOWN       &kp RIGHT  &kp DELETE
-&trans  &trans      &trans      &trans  &trans  &trans      &trans  &trans  &kp RG(Z)  &kp RG(LS(Z))  &trans     &kp DELETE
-&trans  &bt BT_CLR  &bt BT_NXT  &trans  &trans  &trans      &trans  &trans                                       &trans
+&kp ESCAPE  &trans      &zoom_out   &zoom_zero  &zoom                           &trans  &trans     &kp UP         &trans     &trans
+&trans      &trans      &trans      &trans      &trans  &vim_save       &trans  &trans  &kp LEFT   &kp DOWN       &kp RIGHT  &kp DELETE
+&trans      &trans      &trans      &trans      &trans  &vim_quite      &trans  &trans  &kp RG(Z)  &kp RG(LS(Z))  &trans     &kp DELETE
+&trans      &bt BT_CLR  &bt BT_NXT  &trans      &trans  &trans          &trans  &trans                                       &trans
             >;
         };
 
