@@ -719,10 +719,10 @@
 
         layer_5 {
             bindings = <
-&kp ESCAPE  &trans      &zoom_out   &zoom_zero  &zoom                           &trans  &trans     &kp UP         &trans     &trans
-&trans      &trans      &trans      &trans      &trans  &vim_save       &trans  &trans  &kp LEFT   &kp DOWN       &kp RIGHT  &kp DELETE
-&trans      &trans      &trans      &trans      &trans  &vim_quite      &trans  &trans  &kp RG(Z)  &kp RG(LS(Z))  &trans     &kp DELETE
-&trans      &bt BT_CLR  &bt BT_NXT  &trans      &trans  &trans          &trans  &trans                                       &trans
+&kp ESCAPE  &trans      &kp LG(MINUS)  &kp RG(NUMBER_0)  &kp LG(PLUS)                          &trans  &trans     &kp UP         &trans     &trans
+&trans      &trans      &trans         &trans            &trans        &vim_save       &trans  &trans  &kp LEFT   &kp DOWN       &kp RIGHT  &kp DELETE
+&trans      &trans      &trans         &trans            &trans        &vim_quite      &trans  &trans  &kp RG(Z)  &kp RG(LS(Z))  &trans     &kp DELETE
+&trans      &bt BT_CLR  &bt BT_NXT     &trans            &trans        &trans          &trans  &trans                                       &trans
             >;
         };
 
