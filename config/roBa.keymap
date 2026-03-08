@@ -747,10 +747,10 @@
 
         layer_5 {
             bindings = <
-&kp ESCAPE  &trans      &kp LG(MINUS)  &kp RG(NUMBER_0)  &kp LG(PLUS)                          &trans  &mt RIGHT_SHIFT LEFT_ARROW  &kp UP         &mt LEFT_SHIFT RIGHT  &trans
-&trans      &trans      &trans         &trans            &trans        &vim_save       &trans  &trans  &kp LEFT                    &kp DOWN       &kp RIGHT             &kp DELETE
-&trans      &trans      &trans         &trans            &trans        &vim_quite      &trans  &trans  &kp RG(Z)                   &kp RG(LS(Z))  &trans                &kp DELETE
-&trans      &bt BT_CLR  &bt BT_NXT     &trans            &trans        &trans          &trans  &trans                                                                   &trans
+&kp ESCAPE  &trans      &kp LG(MINUS)  &kp RG(NUMBER_0)  &kp LG(PLUS)                          &trans               &mt RIGHT_SHIFT LEFT_ARROW  &kp UP         &mt LEFT_SHIFT RIGHT  &trans
+&trans      &trans      &trans         &trans            &trans        &vim_save       &trans  &mt LEFT_SHIFT LEFT  &kp LEFT                    &kp DOWN       &kp RIGHT             &mt LEFT_SHIFT RIGHT_ARROW
+&trans      &trans      &trans         &trans            &trans        &vim_quite      &trans  &trans               &kp RG(Z)                   &kp RG(LS(Z))  &trans                &kp DELETE
+&trans      &bt BT_CLR  &bt BT_NXT     &trans            &trans        &trans          &trans  &trans                                                                                &trans
             >;
         };
 
