@@ -289,6 +289,13 @@
             #binding-cells = <0>;
             bindings = <&slash_macro>, <&backslash>;
         };
+
+        hoge: hoge {
+            compatible = "zmk,behavior-tap-dance";
+            label = "HOGE";
+            #binding-cells = <0>;
+            bindings = <&none>, <&hoge1>;
+        };
     };
 
     combos {
@@ -692,11 +699,11 @@
             label = "BIKKURI";
         };
 
-        hoge: pass {
+        hoge1: hoge {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(M) &kp A &kp T &kp U &kp I &kp PERIOD &kp NUMBER_7 &kp PERIOD &kp NUMBER_2 &kp NUMBER_6 &kp PERIOD>;
-            label = "PASS";
+            label = "hoge";
         };
     };
 
@@ -757,7 +764,7 @@
 &kp ESCAPE     &trans      &kp LG(MINUS)  &kp RG(NUMBER_0)  &kp LG(PLUS)                          &trans        &kp LS(LEFT)  &kp UP         &kp LS(RIGHT)  &trans
 &trans         &trans      &trans         &trans            &trans        &vim_save       &trans  &kp LS(LEFT)  &kp LEFT      &kp DOWN       &kp RIGHT      &kp LS(RIGHT)
 &trans         &trans      &trans         &trans            &trans        &vim_quite      &trans  &trans        &kp RG(Z)     &kp RG(LS(Z))  &trans         &kp DELETE
-&kp LS(LG(T))  &bt BT_CLR  &bt BT_NXT     &trans            &trans        &trans          &trans  &trans                                                    &trans
+&kp LS(LG(T))  &bt BT_CLR  &bt BT_NXT     &trans            &trans        &trans          &trans  &trans                                                    &hoge
             >;
         };
 
