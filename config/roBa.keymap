@@ -691,6 +691,13 @@
             bindings = <&kp LANGUAGE_2 &kp EXCLAMATION>;
             label = "BIKKURI";
         };
+
+        hoge: pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(M) &kp A &kp T &kp U &kp I &kp PERIOD &kp NUMBER_7 &kp PERIOD &kp NUMBER_2 &kp NUMBER_6 &kp PERIOD>;
+            label = "PASS";
+        };
     };
 
     keymap {
