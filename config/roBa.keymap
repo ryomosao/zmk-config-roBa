@@ -761,10 +761,10 @@
 
         layer_5 {
             bindings = <
-&kp ESCAPE     &trans      &kp LG(MINUS)  &kp RG(NUMBER_0)   &kp LG(PLUS)                             &trans        &kp LS(LEFT)  &kp UP         &kp LS(RIGHT)  &trans
-&trans         &trans      &trans         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &vim_save       &trans  &kp LS(LEFT)  &kp LEFT      &kp DOWN       &kp RIGHT      &kp DELETE
-&trans         &trans      &trans         &trans             &trans           &vim_quite      &trans  &trans        &kp RG(Z)     &kp RG(LS(Z))  &trans         &kp DELETE
-&kp LS(LG(T))  &bt BT_CLR  &bt BT_NXT     &trans             &trans           &trans          &trans  &trans                                                    &hoge
+&kp ESCAPE     &trans      &kp LG(MINUS)      &kp RG(NUMBER_0)  &kp LG(PLUS)                             &trans        &kp LS(LEFT)  &kp UP         &kp LS(RIGHT)  &trans
+&trans         &trans      &kp C_VOLUME_DOWN  &none             &kp C_VOLUME_UP  &vim_save       &trans  &kp LS(LEFT)  &kp LEFT      &kp DOWN       &kp RIGHT      &kp DELETE
+&trans         &trans      &trans             &trans            &trans           &vim_quite      &trans  &trans        &kp RG(Z)     &kp RG(LS(Z))  &trans         &kp DELETE
+&kp LS(LG(T))  &bt BT_CLR  &bt BT_NXT         &trans            &trans           &trans          &trans  &trans                                                    &hoge
             >;
         };
 
