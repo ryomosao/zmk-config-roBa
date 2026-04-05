@@ -707,6 +707,13 @@
             bindings = <&kp LANGUAGE_2 &kp AT_SIGN>;
             label = "AT";
         };
+
+        yajirusi_ue: yajirusi_ue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp CARET &kp U &kp E>;
+            label = "YAJIRUSI_UE";
+        };
     };
 
     keymap {
@@ -743,9 +750,9 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE        &syapu         &doller  &percent        &and                                          &backquate  &syapu                &ue                    &equal       &pipe
-&none             &kp LC(COLON)  &six     &kp LEFT_BRACE  &kp RIGHT_BRACE  &childa        &doublequate  &astarisk   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &plus        &coron
-&none             &none          &nine    &none           &kp BACKSLASH    &kp SLASH      &kp LBKT      &kp RBKT    &dainari              &syounari              &kp AT_SIGN  &underbar
+&kp ESCAPE        &and           &doller  &percent        &yajirusi_ue                                  &backquate  &syapu                &ue                    &equal       &pipe
+&kp SEMICOLON     &kp LC(COLON)  &none    &kp LEFT_BRACE  &kp RIGHT_BRACE  &childa        &doublequate  &astarisk   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &plus        &coron
+&none             &none          &none    &none           &kp BACKSLASH    &kp SLASH      &kp LBKT      &kp RBKT    &dainari              &syounari              &kp AT_SIGN  &underbar
 &kp LEFT_CONTROL  &kp LALT       &none    &none           &none            &none          &kp PERIOD    &slash                                                                &to 0
             >;
         };
@@ -772,7 +779,7 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &kp LG(T)           &kp LG(K)  &kp LG(F)    &trans
+&trans  &trans  &trans  &trans  &trans                      &none   &kp LG(T)           &kp LG(K)  &kp LG(F)    &none
 &none   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RG(C)           &kp RG(X)  &kp RG(V)    &slackstump
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &slack_sure_nakami  &trans     &slack_edit  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                              &trans
