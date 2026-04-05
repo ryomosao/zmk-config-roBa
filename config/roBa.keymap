@@ -320,11 +320,6 @@
             bindings = <&kp LA(ENTER)>;
             key-positions = <28 41>;
         };
-
-        kana {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <38 18>;
-        };
     };
 
     macros {
@@ -777,7 +772,7 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans              &CTRL_F_K  &trans       &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &kp LG(T)           &kp LG(K)  &kp LG(F)    &trans
 &none   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RG(C)           &kp RG(X)  &kp RG(V)    &slackstump
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &slack_sure_nakami  &trans     &slack_edit  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                              &trans
