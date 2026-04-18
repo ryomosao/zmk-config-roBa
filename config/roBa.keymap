@@ -315,6 +315,11 @@
             bindings = <&kp LA(ENTER)>;
             key-positions = <28 41>;
         };
+
+        totsu {
+            bindings = <&kp CARET>;
+            key-positions = <6 7>;
+        };
     };
 
     macros {
