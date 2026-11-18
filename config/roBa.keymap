@@ -325,6 +325,11 @@
             bindings = <&kp LA(LEFT_GUI)>;
             key-positions = <26 25>;
         };
+
+        mic {
+            bindings = <&kp F5>;
+            key-positions = <30 31>;
+        };
     };
 
     macros {
